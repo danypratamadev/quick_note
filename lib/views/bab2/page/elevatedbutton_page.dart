@@ -1,6 +1,5 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
+import 'package:quick_note/core/utils/toast.dart';
 
 class ElevatedbuttonPage extends StatefulWidget {
   const ElevatedbuttonPage({super.key});
@@ -30,14 +29,14 @@ class _ElevatedbuttonPageState extends State<ElevatedbuttonPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
-                  onPressed: () => log('Button clicked'), 
+                  onPressed: () => AppToast.show(message: 'Default ElevatedButton'),
                   child: const Text(
                     'Click Me'
                   )
                 ),
                 const SizedBox(height: 16.0,),
                 ElevatedButton(
-                  onPressed: () => log('Button clicked'), 
+                  onPressed: () => AppToast.show(message: 'ElevatedButton with custom background color'),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.indigo,
                     foregroundColor: Colors.white
@@ -48,7 +47,7 @@ class _ElevatedbuttonPageState extends State<ElevatedbuttonPage> {
                 ),
                 const SizedBox(height: 16.0,),
                 ElevatedButton.icon(
-                  onPressed: () => log('Button clicked'), 
+                  onPressed: () => AppToast.show(message: 'ElevatedButton with icon'),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
                     foregroundColor: Colors.white
@@ -64,7 +63,7 @@ class _ElevatedbuttonPageState extends State<ElevatedbuttonPage> {
                 SizedBox(
                   width: double.maxFinite,
                   child: ElevatedButton.icon(
-                    onPressed: () => log('Button clicked'), 
+                    onPressed: () => AppToast.show(message: 'ElevatedButton with custom width'),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
                       foregroundColor: Colors.white
@@ -74,7 +73,7 @@ class _ElevatedbuttonPageState extends State<ElevatedbuttonPage> {
                     ),
                     label: const Text(
                       'Click Me'
-                    )
+                    ),
                   ),
                 ),
                 const SizedBox(height: 16.0,),
@@ -82,7 +81,7 @@ class _ElevatedbuttonPageState extends State<ElevatedbuttonPage> {
                   width: double.maxFinite,
                   height: 48.0,
                   child: ElevatedButton.icon(
-                    onPressed: () => log('Button clicked'), 
+                    onPressed: () => AppToast.show(message: 'ElevatedButton with custom height'),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.pink,
                       foregroundColor: Colors.white,
@@ -106,7 +105,7 @@ class _ElevatedbuttonPageState extends State<ElevatedbuttonPage> {
                         width: double.maxFinite,
                         height: 48.0,
                         child: ElevatedButton.icon(
-                          onPressed: () => log('Button clicked'), 
+                          onPressed: () => AppToast.show(message: 'ElevatedButton with default icon alignment'),
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.pink,
                             foregroundColor: Colors.white,
@@ -129,7 +128,7 @@ class _ElevatedbuttonPageState extends State<ElevatedbuttonPage> {
                         width: double.maxFinite,
                         height: 48.0,
                         child: ElevatedButton.icon(
-                          onPressed: () => log('Button clicked'), 
+                          onPressed: () => AppToast.show(message: 'ElevatedButton with right icon alignment'),
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.blue,
                             foregroundColor: Colors.white,
@@ -142,7 +141,8 @@ class _ElevatedbuttonPageState extends State<ElevatedbuttonPage> {
                           ),
                           label: const Text(
                             'Share'
-                          )
+                          ),
+                          iconAlignment: IconAlignment.end,
                         ),
                       ),
                     ),

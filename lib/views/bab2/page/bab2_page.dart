@@ -16,6 +16,10 @@ class _Bab2PageState extends State<Bab2Page> {
       route: '/bab2/text'
     ),
     MenuModel(
+      title: 'Icon', 
+      route: '/bab2/icon'
+    ),
+    MenuModel(
       title: 'Container', 
       route: '/bab2/container'
     ),
@@ -30,6 +34,10 @@ class _Bab2PageState extends State<Bab2Page> {
     MenuModel(
       title: 'Column & Row', 
       route: '/bab2/column-row'
+    ),
+    MenuModel(
+      title: 'Switch', 
+      route: '/bab2/switch'
     ),
     MenuModel(
       title: 'ElevatedButton', 
@@ -48,16 +56,20 @@ class _Bab2PageState extends State<Bab2Page> {
       route: '/bab2/textfield'
     ),
     MenuModel(
-      title: 'Icon', 
-      route: '/bab2/icon'
+      title: 'Image Asset', 
+      route: '/bab2/image-asset'
     ),
     MenuModel(
       title: 'Image Network', 
       route: '/bab2/image-network'
     ),
     MenuModel(
-      title: 'Image Asset', 
-      route: '/bab2/image-asset'
+      title: 'ListTile', 
+      route: '/bab2/listtile'
+    ),
+    MenuModel(
+      title: 'ExpansionTile', 
+      route: '/bab2/expansiontile'
     ),
   ];
 
@@ -117,19 +129,22 @@ class _Bab2PageState extends State<Bab2Page> {
                   )
                 ],
               ),
-              const ExpansionTile(
+              ListTile(
                 dense: true,
-                title: Text(
-                  'Tugas',
+                title: const Text(
+                  'Praktikum',
                   style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.w600
                   ),
                 ),
-                childrenPadding: EdgeInsets.symmetric(
-                  horizontal: 16.0
+                trailing: Transform.translate(
+                  offset: const Offset(0.0, 0.0),
+                  child: const Icon(
+                    Icons.chevron_right_rounded
+                  ),
                 ),
-                children: [],
+                onTap: () => Navigator.of(context).pushNamed('/bab2/praktik'),
               )
             ],
           ),

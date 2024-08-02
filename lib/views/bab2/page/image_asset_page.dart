@@ -20,17 +20,19 @@ class _ImageAssetPageState extends State<ImageAssetPage> {
           ),
         ),
       ),
-      body: Center(
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(8.0),
-          child: Image.asset(
-            'assets/images/malioboro2.jpg',
-            width: 300.0,
-            height: 300.0,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.medium,
-          ),
-        )
+      body: SafeArea(
+        child: Center(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(8.0),
+            child: Image.asset(
+              'assets/images/malioboro2.jpg',
+              width: 300.0,
+              height: 300.0,
+              fit: BoxFit.cover,
+              filterQuality: FilterQuality.medium,
+            ),
+          )
+        ),
       ),
     );
   }

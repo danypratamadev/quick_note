@@ -1,6 +1,5 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
+import 'package:quick_note/core/utils/toast.dart';
 
 class IconbuttonPage extends StatefulWidget {
   const IconbuttonPage({super.key});
@@ -33,7 +32,7 @@ class _IconbuttonPageState extends State<IconbuttonPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     IconButton(
-                      onPressed: () => log('Button clicked'), 
+                      onPressed: () => AppToast.show(message: 'Default IconButton'),
                       icon: const Icon(
                         Icons.thumb_up_rounded,
                       ),
@@ -41,7 +40,7 @@ class _IconbuttonPageState extends State<IconbuttonPage> {
                     ),
                     const SizedBox(width: 16.0,),
                     IconButton(
-                      onPressed: () => log('Button clicked'), 
+                      onPressed: () => AppToast.show(message: 'Default IconButton'),
                       icon: const Icon(
                         Icons.thumb_down_rounded,
                       ),
@@ -62,7 +61,7 @@ class _IconbuttonPageState extends State<IconbuttonPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     IconButton.filled(
-                      onPressed: () => log('Button clicked'), 
+                      onPressed: () => AppToast.show(message: 'Filled IconButton'),
                       icon: const Icon(
                         Icons.thumb_up_rounded,
                       ),
@@ -72,7 +71,7 @@ class _IconbuttonPageState extends State<IconbuttonPage> {
                     ),
                     const SizedBox(width: 16.0,),
                     IconButton.filled(
-                      onPressed: () => log('Button clicked'), 
+                      onPressed: () => AppToast.show(message: 'Filled IconButton'),
                       icon: const Icon(
                         Icons.thumb_down_rounded,
                       ),
@@ -97,7 +96,7 @@ class _IconbuttonPageState extends State<IconbuttonPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     IconButton.filled(
-                      onPressed: () => log('Button clicked'), 
+                      onPressed: () => AppToast.show(message: 'Filled IconButton with compact visual density'),
                       icon: const Icon(
                         Icons.thumb_up_rounded,
                       ),
@@ -108,7 +107,7 @@ class _IconbuttonPageState extends State<IconbuttonPage> {
                     ),
                     const SizedBox(width: 16.0,),
                     IconButton.filled(
-                      onPressed: () => log('Button clicked'), 
+                      onPressed: () => AppToast.show(message: 'Filled IconButton with compact visual density'),
                       icon: const Icon(
                         Icons.thumb_down_rounded,
                       ),
@@ -135,7 +134,7 @@ class _IconbuttonPageState extends State<IconbuttonPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     IconButton.outlined(
-                      onPressed: () => log('Button clicked'), 
+                      onPressed: () => AppToast.show(message: 'IconButton with outline border'),
                       icon: const Icon(
                         Icons.thumb_up_rounded,
                       ),
@@ -148,7 +147,7 @@ class _IconbuttonPageState extends State<IconbuttonPage> {
                     ),
                     const SizedBox(width: 16.0,),
                     IconButton.outlined(
-                      onPressed: () => log('Button clicked'), 
+                      onPressed: () => AppToast.show(message: 'IconButton with outline border'),
                       icon: const Icon(
                         Icons.thumb_down_rounded,
                       ),
@@ -176,7 +175,7 @@ class _IconbuttonPageState extends State<IconbuttonPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     IconButton.outlined(
-                      onPressed: () => log('Button clicked'), 
+                      onPressed: () => AppToast.show(message: 'Outline IconButton with compact visual density'),
                       icon: const Icon(
                         Icons.thumb_up_rounded,
                       ),
@@ -190,7 +189,7 @@ class _IconbuttonPageState extends State<IconbuttonPage> {
                     ),
                     const SizedBox(width: 16.0,),
                     IconButton.outlined(
-                      onPressed: () => log('Button clicked'), 
+                      onPressed: () => AppToast.show(message: 'Outline IconButton with compact visual density'),
                       icon: const Icon(
                         Icons.thumb_down_rounded,
                       ),

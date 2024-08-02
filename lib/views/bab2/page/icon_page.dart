@@ -20,41 +20,43 @@ class _IconPageState extends State<IconPage> {
           ),
         ),
       ),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.thumb_up_rounded,
-                ),
-                SizedBox(width: 16.0,),
-                Icon(
-                  Icons.thumb_down_rounded,
-                ),
-              ],
-            ),
-            SizedBox(height: 16.0,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.thumb_up_rounded,
-                  color: Colors.blue,
-                  size: 32.0,
-                ),
-                SizedBox(width: 16.0,),
-                Icon(
-                  Icons.thumb_down_rounded,
-                  color: Colors.red,
-                  size: 32.0,
-                ),
-              ],
-            ),
-          ],
-        )
+      body: const SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.thumb_up_rounded,
+                  ),
+                  SizedBox(width: 16.0,),
+                  Icon(
+                    Icons.thumb_down_rounded,
+                  ),
+                ],
+              ),
+              SizedBox(height: 16.0,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.thumb_up_rounded,
+                    color: Colors.blue,
+                    size: 32.0,
+                  ),
+                  SizedBox(width: 16.0,),
+                  Icon(
+                    Icons.thumb_down_rounded,
+                    color: Colors.red,
+                    size: 32.0,
+                  ),
+                ],
+              ),
+            ],
+          )
+        ),
       ),
     );
   }
