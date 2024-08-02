@@ -22,9 +22,9 @@ class _ListtilePageState extends State<ListtilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'ListTile'.toUpperCase(),
-          style: const TextStyle(
+        title: const Text(
+          'ListTile',
+          style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600
           ),

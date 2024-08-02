@@ -22,9 +22,9 @@ class _Bab2PraktikPageState extends State<Bab2PraktikPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Praktikum'.toUpperCase(),
-          style: const TextStyle(
+        title: const Text(
+          'Praktikum',
+          style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600
           ),

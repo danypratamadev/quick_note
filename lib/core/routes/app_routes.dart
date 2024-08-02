@@ -1,20 +1,21 @@
-import 'package:quick_note/views/bab2/page/bab2_page.dart';
-import 'package:quick_note/views/bab2/page/bab2_praktik_page.dart';
-import 'package:quick_note/views/bab2/page/column_page.dart';
-import 'package:quick_note/views/bab2/page/column_row_page.dart';
-import 'package:quick_note/views/bab2/page/container_page.dart';
-import 'package:quick_note/views/bab2/page/elevatedbutton_page.dart';
-import 'package:quick_note/views/bab2/page/expansiontile_page.dart';
-import 'package:quick_note/views/bab2/page/icon_page.dart';
-import 'package:quick_note/views/bab2/page/iconbutton_page.dart';
-import 'package:quick_note/views/bab2/page/image_asset_page.dart';
-import 'package:quick_note/views/bab2/page/image_network_page.dart';
-import 'package:quick_note/views/bab2/page/listtile_page.dart';
-import 'package:quick_note/views/bab2/page/row_page.dart';
-import 'package:quick_note/views/bab2/page/switch_page.dart';
-import 'package:quick_note/views/bab2/page/text_page.dart';
-import 'package:quick_note/views/bab2/page/textbutton_page.dart';
-import 'package:quick_note/views/bab2/page/textfield_page.dart';
+import 'package:quick_note/views/bab2/bab2_page.dart';
+import 'package:quick_note/views/bab2/materi/column_page.dart';
+import 'package:quick_note/views/bab2/materi/column_row_page.dart';
+import 'package:quick_note/views/bab2/materi/container_page.dart';
+import 'package:quick_note/views/bab2/materi/elevatedbutton_page.dart';
+import 'package:quick_note/views/bab2/materi/expansiontile_page.dart';
+import 'package:quick_note/views/bab2/materi/icon_page.dart';
+import 'package:quick_note/views/bab2/materi/iconbutton_page.dart';
+import 'package:quick_note/views/bab2/materi/image_asset_page.dart';
+import 'package:quick_note/views/bab2/materi/image_network_page.dart';
+import 'package:quick_note/views/bab2/materi/listtile_page.dart';
+import 'package:quick_note/views/bab2/materi/row_page.dart';
+import 'package:quick_note/views/bab2/materi/singlescroll_page.dart';
+import 'package:quick_note/views/bab2/materi/switch_page.dart';
+import 'package:quick_note/views/bab2/materi/text_page.dart';
+import 'package:quick_note/views/bab2/materi/textbutton_page.dart';
+import 'package:quick_note/views/bab2/materi/textfield_page.dart';
+import 'package:quick_note/views/bab2/praktik/bab2_praktik_page.dart';
 
 class AppRoutes {
   
@@ -35,6 +36,7 @@ class AppRoutes {
     '/bab2/image-asset': (context) => const ImageAssetPage(),
     '/bab2/listtile': (context) => const ListtilePage(),
     '/bab2/expansiontile': (context) => const ExpansiontilePage(),
+    '/bab2/singlescroll': (context) => const SinglescrollPage(),
     '/bab2/praktik': (context) => const Bab2PraktikPage(),
   };
 

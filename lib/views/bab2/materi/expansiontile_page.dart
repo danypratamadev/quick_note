@@ -12,9 +12,9 @@ class _ExpansiontilePageState extends State<ExpansiontilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'ExpansionTile'.toUpperCase(),
-          style: const TextStyle(
+        title: const Text(
+          'ExpansionTile',
+          style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600
           ),

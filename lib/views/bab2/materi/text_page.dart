@@ -12,9 +12,9 @@ class _TextPageState extends State<TextPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Text'.toUpperCase(),
-          style: const TextStyle(
+        title: const Text(
+          'Text',
+          style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600
           ),

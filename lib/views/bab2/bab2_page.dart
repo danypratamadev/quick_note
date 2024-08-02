@@ -71,15 +71,19 @@ class _Bab2PageState extends State<Bab2Page> {
       title: 'ExpansionTile', 
       route: '/bab2/expansiontile'
     ),
+    MenuModel(
+      title: 'SingleChildScrollView', 
+      route: '/bab2/singlescroll'
+    ),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Bab 2 Widget/Component'.toUpperCase(),
-          style: const TextStyle(
+        title: const Text(
+          'Bab 2 Widget/Component',
+          style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600
           ),

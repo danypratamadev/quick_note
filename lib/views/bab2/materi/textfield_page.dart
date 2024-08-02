@@ -14,9 +14,9 @@ class _TextfieldPageState extends State<TextfieldPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'TextField'.toUpperCase(),
-          style: const TextStyle(
+        title: const Text(
+          'TextField',
+          style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600
           ),

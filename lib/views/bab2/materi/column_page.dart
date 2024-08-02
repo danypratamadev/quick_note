@@ -12,9 +12,9 @@ class _ColumnPageState extends State<ColumnPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Column'.toUpperCase(),
-          style: const TextStyle(
+        title: const Text(
+          'Column',
+          style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600
           ),

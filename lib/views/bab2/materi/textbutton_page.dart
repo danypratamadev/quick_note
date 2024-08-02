@@ -13,9 +13,9 @@ class _TextbuttonPageState extends State<TextbuttonPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'TextButton'.toUpperCase(),
-          style: const TextStyle(
+        title: const Text(
+          'TextButton',
+          style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600
           ),

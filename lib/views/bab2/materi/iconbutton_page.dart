@@ -13,9 +13,9 @@ class _IconbuttonPageState extends State<IconbuttonPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'IconButton'.toUpperCase(),
-          style: const TextStyle(
+        title: const Text(
+          'IconButton',
+          style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600
           ),
