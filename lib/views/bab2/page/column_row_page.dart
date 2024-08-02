@@ -12,8 +12,12 @@ class _ColumnRowPageState extends State<ColumnRowPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Column & Row Widget'
+        title: Text(
+          'Column & Row'.toUpperCase(),
+          style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.w600
+          ),
         ),
       ),
       body: SafeArea(

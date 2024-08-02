@@ -12,8 +12,12 @@ class _RowPageState extends State<RowPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Row Widget'
+        title: Text(
+          'Row'.toUpperCase(),
+          style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.w600
+          ),
         ),
       ),
       body: SafeArea(

@@ -12,8 +12,12 @@ class _ImageAssetPageState extends State<ImageAssetPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Image Asset Widget'
+        title: Text(
+          'Image Asset'.toUpperCase(),
+          style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.w600
+          ),
         ),
       ),
       body: Center(

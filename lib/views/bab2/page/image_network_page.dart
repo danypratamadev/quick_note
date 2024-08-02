@@ -12,8 +12,12 @@ class _ImageNetworkPageState extends State<ImageNetworkPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Image Network Widget'
+        title: Text(
+          'Image Network'.toUpperCase(),
+          style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.w600
+          ),
         ),
       ),
       body: Center(

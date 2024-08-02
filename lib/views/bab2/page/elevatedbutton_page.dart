@@ -14,8 +14,12 @@ class _ElevatedbuttonPageState extends State<ElevatedbuttonPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'ElevatedButton Widget'
+        title: Text(
+          'ElevatedButton'.toUpperCase(),
+          style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.w600
+          ),
         ),
       ),
       body: SafeArea(
@@ -143,7 +147,28 @@ class _ElevatedbuttonPageState extends State<ElevatedbuttonPage> {
                       ),
                     ),
                   ],
-                )
+                ),
+                const SizedBox(height: 16.0,),
+                SizedBox(
+                  width: double.maxFinite,
+                  height: 48.0,
+                  child: ElevatedButton.icon(
+                    onPressed: null, 
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.pink,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0)
+                      )
+                    ),
+                    icon: const Icon(
+                      Icons.thumb_up_rounded
+                    ),
+                    label: const Text(
+                      'Like'
+                    )
+                  ),
+                ),
               ],
             ),
           )

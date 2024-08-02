@@ -12,8 +12,12 @@ class _ContainerPageState extends State<ContainerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Container Widget'
+        title: Text(
+          'Container'.toUpperCase(),
+          style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.w600
+          ),
         ),
       ),
       body: SafeArea(

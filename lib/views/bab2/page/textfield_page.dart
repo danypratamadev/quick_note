@@ -14,8 +14,12 @@ class _TextfieldPageState extends State<TextfieldPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'TextField Widget'
+        title: Text(
+          'TextField'.toUpperCase(),
+          style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.w600
+          ),
         ),
       ),
       body: SafeArea(
@@ -41,6 +45,7 @@ class _TextfieldPageState extends State<TextfieldPage> {
                     hintText: 'Enter phone number',
                     filled: true
                   ),
+                  keyboardType: TextInputType.number,
                   maxLength: 13,
                 ),
                 const SizedBox(height: 16.0,),
@@ -64,6 +69,7 @@ class _TextfieldPageState extends State<TextfieldPage> {
                     ),
                     filled: true
                   ),
+                  keyboardType: TextInputType.number,
                   maxLength: 13,
                 ),
                 const SizedBox(height: 16.0,),
