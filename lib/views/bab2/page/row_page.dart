@@ -16,29 +16,31 @@ class _RowPageState extends State<RowPage> {
           'Row Widget'
         ),
       ),
-      body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.indigo,
-            ),
-            const SizedBox(width: 16.0,),
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.blue,
-            ),
-            const SizedBox(width: 16.0,),
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.green,
-            ),
-          ],
-        )
+      body: SafeArea(
+        child: Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.indigo,
+              ),
+              const SizedBox(width: 16.0,),
+              Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.blue,
+              ),
+              const SizedBox(width: 16.0,),
+              Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.green,
+              ),
+            ],
+          )
+        ),
       ),
     );
   }

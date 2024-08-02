@@ -16,40 +16,54 @@ class _ColumnRowPageState extends State<ColumnRowPage> {
           'Column & Row Widget'
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 100.0,
-                  height: 100.0,
-                  color: Colors.indigo,
-                ),
-                const SizedBox(width: 16.0,),
-                Container(
-                  width: 100.0,
-                  height: 100.0,
-                  color: Colors.blue,
-                ),
-              ],
-            ),
-            const SizedBox(height: 16.0,),
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.indigo,
-            ),
-            const SizedBox(height: 16.0,),
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.blue,
-            ),
-          ],
-        )
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.indigo,
+                  ),
+                  const SizedBox(width: 16.0,),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.blue,
+                  ),
+                  const SizedBox(width: 16.0,),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16.0,),
+              Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.indigo,
+              ),
+              const SizedBox(height: 16.0,),
+              Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.blue,
+              ),
+              const SizedBox(height: 16.0,),
+              Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.green,
+              ),
+            ],
+          )
+        ),
       ),
     );
   }

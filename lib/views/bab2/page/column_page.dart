@@ -16,29 +16,31 @@ class _ColumnPageState extends State<ColumnPage> {
           'Column Widget'
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.indigo,
-            ),
-            const SizedBox(height: 16.0,),
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.blue,
-            ),
-            const SizedBox(height: 16.0,),
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.green,
-            ),
-          ],
-        )
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.indigo,
+              ),
+              const SizedBox(height: 16.0,),
+              Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.blue,
+              ),
+              const SizedBox(height: 16.0,),
+              Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.green,
+              ),
+            ],
+          )
+        ),
       ),
     );
   }
