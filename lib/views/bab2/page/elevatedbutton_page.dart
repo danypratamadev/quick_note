@@ -2,20 +2,20 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class ElevatedbuttonPage extends StatefulWidget {
+  const ElevatedbuttonPage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<ElevatedbuttonPage> createState() => _ElevatedbuttonPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ElevatedbuttonPageState extends State<ElevatedbuttonPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Home Page'
+          'ElevatedButton Widget'
         ),
       ),
       body: Center(
@@ -55,12 +55,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         )
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(
-          Icons.add_rounded
-        ),
-        onPressed: () => log('Hello World!'),
       ),
     );
   }

@@ -1,21 +1,19 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class TextPage extends StatefulWidget {
+  const TextPage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<TextPage> createState() => _TextPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _TextPageState extends State<TextPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Home Page'
+          'Text Widget'
         ),
       ),
       body: const Center(
@@ -29,12 +27,6 @@ class _MyHomePageState extends State<MyHomePage> {
             fontStyle: FontStyle.italic
           ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(
-          Icons.add_rounded
-        ),
-        onPressed: () => log('Hello World!'),
       ),
     );
   }

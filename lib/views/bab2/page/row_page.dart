@@ -1,25 +1,23 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class RowPage extends StatefulWidget {
+  const RowPage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<RowPage> createState() => _RowPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _RowPageState extends State<RowPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Home Page'
+          'Row Widget'
         ),
       ),
       body: Center(
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
@@ -27,13 +25,13 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 100.0,
               color: Colors.indigo,
             ),
-            const SizedBox(height: 16.0,),
+            const SizedBox(width: 16.0,),
             Container(
               width: 100.0,
               height: 100.0,
               color: Colors.blue,
             ),
-            const SizedBox(height: 16.0,),
+            const SizedBox(width: 16.0,),
             Container(
               width: 100.0,
               height: 100.0,
@@ -41,12 +39,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         )
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(
-          Icons.add_rounded
-        ),
-        onPressed: () => log('Hello World!'),
       ),
     );
   }

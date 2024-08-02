@@ -1,21 +1,19 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class ImageAssetPage extends StatefulWidget {
+  const ImageAssetPage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<ImageAssetPage> createState() => _ImageAssetPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ImageAssetPageState extends State<ImageAssetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Home Page'
+          'Image Asset Widget'
         ),
       ),
       body: Center(
@@ -29,12 +27,6 @@ class _MyHomePageState extends State<MyHomePage> {
             filterQuality: FilterQuality.medium,
           ),
         )
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(
-          Icons.add_rounded
-        ),
-        onPressed: () => log('Hello World!'),
       ),
     );
   }

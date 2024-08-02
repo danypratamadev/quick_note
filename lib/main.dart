@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quick_note/bab2/page/bab2_page.dart';
+import 'package:quick_note/core/routes/app_routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Bab2Page(),
+      initialRoute: '/bab2',
+      routes: AppRoutes.routes,
     );
   }
 }
