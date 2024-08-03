@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
             child: Material(
               color: Colors.white,
               child: InkWell(
-                onTap: () => Navigator.of(context).pushNamed(listMenu[index].route),
+                onTap: () => Navigator.of(context).pushNamed(listMenu[index].route!),
                 child: Container(
                   constraints: const BoxConstraints(
                     minHeight: 72.0

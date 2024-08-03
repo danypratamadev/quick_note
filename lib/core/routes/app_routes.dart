@@ -24,6 +24,12 @@ import 'package:quick_note/views/bab3/materi/listview_separated_page.dart';
 import 'package:quick_note/views/bab3/prakrik/bab3_horizontal_listview_page.dart';
 import 'package:quick_note/views/bab3/prakrik/bab3_vertical_listview_page.dart';
 import 'package:quick_note/views/bab4/bab4_page.dart';
+import 'package:quick_note/views/bab4/materi/gridview_builder_page.dart';
+import 'package:quick_note/views/bab4/materi/gridview_count_page.dart';
+import 'package:quick_note/views/bab4/materi/gridview_custom_page.dart';
+import 'package:quick_note/views/bab4/materi/gridview_extent_page.dart';
+import 'package:quick_note/views/bab4/praktik/bab4_horizontal_listview_page.dart';
+import 'package:quick_note/views/bab4/praktik/bab4_vertical_listview_page.dart';
 import 'package:quick_note/views/bab5/bab5_page.dart';
 import 'package:quick_note/views/bab6/bab6_page.dart';
 import 'package:quick_note/views/home_page.dart';
@@ -60,6 +66,12 @@ class AppRoutes {
   static const String bab3HorizontalRoute = '/bab3/horizontal-list-praktik';
 
   static const String bab4Route = '/bab4';
+  static const String gridViewCountRoute = '/bab4/gridview-count';
+  static const String gridViewExtentRoute = '/bab4/gridview-extent';
+  static const String gridViewBuilderRoute = '/bab4/gridview-builder';
+  static const String gridViewCustomRoute = '/bab4/gridview-custom';
+  static const String bab4VerticalRoute = '/bab3/vertical-grid-praktik';
+  static const String bab4HorizontalRoute = '/bab3/horizontal-grid-praktik';
 
   static const String bab5Route = '/bab5';
 
@@ -96,6 +108,13 @@ class AppRoutes {
     bab3HorizontalRoute: (context) => const Bab3HorizontalListviewPage(),
 
     bab4Route: (context) => const Bab4Page(),
+    gridViewCountRoute: (context) => const GridviewCountPage(),
+    gridViewExtentRoute: (context) => const GridviewExtentPage(),
+    gridViewBuilderRoute: (context) => const GridviewBuilderPage(),
+    gridViewCustomRoute: (context) => const GridviewCustomPage(),
+    bab4VerticalRoute: (context) => const Bab4VerticalListviewPage(),
+    bab4HorizontalRoute: (context) => const Bab4HorizontalListviewPage(),
+
     bab5Route: (context) => const Bab5Page(),
     bab6Route: (context) => const Bab6Page(),
   };

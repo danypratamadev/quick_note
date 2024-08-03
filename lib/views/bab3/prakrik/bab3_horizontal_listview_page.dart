@@ -156,7 +156,7 @@ class _Bab3HorizontalListviewPageState extends State<Bab3HorizontalListviewPage>
                     ),
                     SizedBox(height: 3.0,),
                     Text(
-                      'Gunakan: ListView.separated, LimitedBox, Image.assets dan SizedBox',
+                      'Gunakan: ListView.separated, LimitedBox, ClipRRect, Image.assets dan SizedBox',
                       style: TextStyle(
                         fontSize: 14.0,
                       ),

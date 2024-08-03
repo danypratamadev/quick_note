@@ -115,7 +115,7 @@ class _Bab2PageState extends State<Bab2Page> {
                     padding: EdgeInsets.zero,
                     physics: const BouncingScrollPhysics(),
                     itemBuilder: (context, index) => ListTile(
-                      onTap: () => Navigator.of(context).pushNamed(listMenu[index].route),
+                      onTap: () => Navigator.of(context).pushNamed(listMenu[index].route!),
                       dense: true,
                       title: Text(
                         listMenu[index].title,
@@ -134,6 +134,7 @@ class _Bab2PageState extends State<Bab2Page> {
                   )
                 ],
               ),
+              const SizedBox(height: 16.0,),
               ListTile(
                 dense: true,
                 title: const Text(

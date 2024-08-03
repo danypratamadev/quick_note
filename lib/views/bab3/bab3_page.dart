@@ -30,6 +30,17 @@ class _Bab3PageState extends State<Bab3Page> {
     ),
   ];
   
+  List<MenuModel> listPraktikMenu = <MenuModel>[
+    MenuModel(
+      title: 'Vertical ListView', 
+      route: AppRoutes.bab3VerticalRoute
+    ),
+    MenuModel(
+      title: 'Horizontal ListView', 
+      route: AppRoutes.bab3HorizontalRoute
+    ),
+  ];
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +78,7 @@ class _Bab3PageState extends State<Bab3Page> {
                     padding: EdgeInsets.zero,
                     physics: const BouncingScrollPhysics(),
                     itemBuilder: (context, index) => ListTile(
-                      onTap: () => Navigator.of(context).pushNamed(listMenu[index].route),
+                      onTap: () => Navigator.of(context).pushNamed(listMenu[index].route!),
                       dense: true,
                       title: Text(
                         listMenu[index].title,
@@ -101,42 +112,29 @@ class _Bab3PageState extends State<Bab3Page> {
                   horizontal: 16.0
                 ),
                 children: [
-                  ListTile(
-                    dense: true,
-                    title: const Text(
-                      'Vertical ListView',
-                      style: TextStyle(
-                        fontSize: 16.0,
+                  ListView.separated(
+                    itemCount: listPraktikMenu.length,
+                    shrinkWrap: true,
+                    padding: EdgeInsets.zero,
+                    physics: const BouncingScrollPhysics(),
+                    itemBuilder: (context, index) => ListTile(
+                      onTap: () => Navigator.of(context).pushNamed(listPraktikMenu[index].route!),
+                      dense: true,
+                      title: Text(
+                        listPraktikMenu[index].title,
+                        style: const TextStyle(
+                          fontSize: 16.0
+                        ),
                       ),
-                    ),
-                    trailing: Transform.translate(
-                      offset: const Offset(0.0, 0.0),
-                      child: Transform.translate(
+                      trailing: Transform.translate(
                         offset: const Offset(12.0, 0.0),
                         child: const Icon(
                           Icons.chevron_right_rounded
                         ),
                       ),
                     ),
-                    onTap: () => Navigator.of(context).pushNamed(AppRoutes.bab3VerticalRoute),
-                  ),
-                  const Divider(height: 0.0,),
-                  ListTile(
-                    dense: true,
-                    title: const Text(
-                      'Horizontal ListView',
-                      style: TextStyle(
-                        fontSize: 16.0,
-                      ),
-                    ),
-                    trailing: Transform.translate(
-                      offset: const Offset(12.0, 0.0),
-                      child: const Icon(
-                        Icons.chevron_right_rounded
-                      ),
-                    ),
-                    onTap: () => Navigator.of(context).pushNamed(AppRoutes.bab3HorizontalRoute),
-                  ),
+                    separatorBuilder: (context, index) => const Divider(height: 0.0,),
+                  )
                 ],
               ),
             ],
