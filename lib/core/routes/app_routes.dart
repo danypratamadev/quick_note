@@ -36,6 +36,7 @@ import 'package:quick_note/views/bab4/materi/gridview_custom_page.dart';
 import 'package:quick_note/views/bab4/materi/gridview_extent_page.dart';
 import 'package:quick_note/views/bab4/praktik/bab4_horizontal_listview_page.dart';
 import 'package:quick_note/views/bab4/praktik/bab4_vertical_listview_page.dart';
+import 'package:quick_note/views/bab5/bab5_detail_page.dart';
 import 'package:quick_note/views/bab5/bab5_page.dart';
 import 'package:quick_note/views/bab6/bab6_page.dart';
 import 'package:quick_note/views/home_page.dart';
@@ -86,6 +87,7 @@ class AppRoutes {
   static const String bab4HorizontalRoute = '/bab3/horizontal-grid-praktik';
 
   static const String bab5Route = '/bab5';
+  static const String bab5DetailRoute = '/bab5/detail';
 
   static const String bab6Route = '/bab6';
   
@@ -134,6 +136,8 @@ class AppRoutes {
     bab4HorizontalRoute: (context) => const Bab4HorizontalListviewPage(),
 
     bab5Route: (context) => const Bab5Page(),
+    bab5DetailRoute: (context) => const Bab5DetailPage(),
+    
     bab6Route: (context) => const Bab6Page(),
   };
 
