@@ -141,6 +141,36 @@ class _ContainerPageState extends State<ContainerPage> {
                   ),
                 ),
               ),
+              const SizedBox(height: 16.0,),
+              Container(
+                width: 200.0,
+                height: 200.0,
+                padding: const EdgeInsets.all(16.0),
+                margin: const EdgeInsets.all(16.0),
+                decoration: BoxDecoration(
+                  color: Colors.indigo,
+                  borderRadius: BorderRadius.circular(8.0),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Colors.black26,
+                      blurRadius: 12.0,
+                      spreadRadius: 4.0,
+                      offset: Offset(0.0, 4.0)
+                    )
+                  ]
+                ),
+                child: const Center(
+                  child: Text(
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
