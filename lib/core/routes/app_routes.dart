@@ -1,16 +1,22 @@
 import 'package:quick_note/views/bab2/bab2_page.dart';
+import 'package:quick_note/views/bab2/materi/align_page.dart';
+import 'package:quick_note/views/bab2/materi/center_page.dart';
 import 'package:quick_note/views/bab2/materi/column_page.dart';
 import 'package:quick_note/views/bab2/materi/column_row_page.dart';
 import 'package:quick_note/views/bab2/materi/container_page.dart';
 import 'package:quick_note/views/bab2/materi/elevatedbutton_page.dart';
+import 'package:quick_note/views/bab2/materi/expanded_page.dart';
 import 'package:quick_note/views/bab2/materi/expansiontile_page.dart';
 import 'package:quick_note/views/bab2/materi/icon_page.dart';
 import 'package:quick_note/views/bab2/materi/iconbutton_page.dart';
 import 'package:quick_note/views/bab2/materi/image_asset_page.dart';
 import 'package:quick_note/views/bab2/materi/image_network_page.dart';
 import 'package:quick_note/views/bab2/materi/listtile_page.dart';
+import 'package:quick_note/views/bab2/materi/padding_page.dart';
 import 'package:quick_note/views/bab2/materi/row_page.dart';
 import 'package:quick_note/views/bab2/materi/singlescroll_page.dart';
+import 'package:quick_note/views/bab2/materi/sizedbox_page.dart';
+import 'package:quick_note/views/bab2/materi/stack_positioned_page.dart';
 import 'package:quick_note/views/bab2/materi/switch_page.dart';
 import 'package:quick_note/views/bab2/materi/text_page.dart';
 import 'package:quick_note/views/bab2/materi/textbutton_page.dart';
@@ -39,13 +45,18 @@ class AppRoutes {
   static const String homeRoute = '/';
 
   static const String bab2Route = '/bab2';
+  static const String centerRoute = '/bab2/center';
+  static const String sizedboxRoute = '/bab2/sizedbox';
   static const String textRoute = '/bab2/text';
-  static const String iconRoute = '/bab2/icon';
+  static const String expandedRoute = '/bab2/expanded';
   static const String countainerRoute = '/bab2/container';
   static const String rowRoute = '/bab2/row';
   static const String columnRoute = '/bab2/column';
   static const String columnRowRoute = '/bab2/column-row';
-  static const String switchRoute = '/bab2/switch';
+  static const String stackRoute = '/bab2/stack';
+  static const String singleScrollRoute = '/bab2/singlescroll';
+  static const String paddingRoute = '/bab2/padding';
+  static const String alignRoute = '/bab2/align';
   static const String elevatedBtnRoute = '/bab2/elevatedbutton';
   static const String iconBtnRoute = '/bab2/iconbutton';
   static const String textBtnRoute = '/bab2/textbutton';
@@ -54,7 +65,8 @@ class AppRoutes {
   static const String imgAssetRoute = '/bab2/image-asset';
   static const String listTileRoute = '/bab2/listtile';
   static const String expanTileRoute = '/bab2/expansiontile';
-  static const String singleScrollRoute = '/bab2/singlescroll';
+  static const String iconRoute = '/bab2/icon';
+  static const String switchRoute = '/bab2/switch';
   static const String bab2PraktikRoute = '/bab2/praktik';
 
   static const String bab3Route = '/bab3';
@@ -81,13 +93,18 @@ class AppRoutes {
     homeRoute: (context) => const HomePage(),
 
     bab2Route: (context) => const Bab2Page(),
+    centerRoute: (context) => const CenterPage(),
+    sizedboxRoute: (context) => const SizedboxPage(),
     textRoute: (context) => const TextPage(),
-    iconRoute: (context) => const IconPage(),
+    expandedRoute: (context) => const ExpandedPage(),
     countainerRoute: (context) => const ContainerPage(),
     rowRoute: (context) => const RowPage(),
     columnRoute: (context) => const ColumnPage(),
     columnRowRoute: (context) => const ColumnRowPage(),
-    switchRoute: (context) => const SwitchPage(),
+    stackRoute: (context) => const StackPositionedPage(),
+    singleScrollRoute: (context) => const SinglescrollPage(),
+    paddingRoute: (context) => const PaddingPage(),
+    alignRoute: (context) => const AlignPage(),
     elevatedBtnRoute: (context) => const ElevatedbuttonPage(),
     iconBtnRoute: (context) => const IconbuttonPage(),
     textBtnRoute: (context) => const TextbuttonPage(),
@@ -96,7 +113,8 @@ class AppRoutes {
     imgAssetRoute: (context) => const ImageAssetPage(),
     listTileRoute: (context) => const ListtilePage(),
     expanTileRoute: (context) => const ExpansiontilePage(),
-    singleScrollRoute: (context) => const SinglescrollPage(),
+    iconRoute: (context) => const IconPage(),
+    switchRoute: (context) => const SwitchPage(),
     bab2PraktikRoute: (context) => const Bab2PraktikPage(),
 
     bab3Route: (context) => const Bab3Page(),

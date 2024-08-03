@@ -13,12 +13,20 @@ class _Bab2PageState extends State<Bab2Page> {
 
   List<MenuModel> listMenu = <MenuModel>[
     MenuModel(
+      title: 'Center', 
+      route: AppRoutes.centerRoute
+    ),
+    MenuModel(
+      title: 'SizedBox', 
+      route: AppRoutes.sizedboxRoute
+    ),
+    MenuModel(
       title: 'Text', 
       route: AppRoutes.textRoute
     ),
     MenuModel(
-      title: 'Icon', 
-      route: AppRoutes.iconRoute
+      title: 'Expanded', 
+      route: AppRoutes.expandedRoute
     ),
     MenuModel(
       title: 'Container', 
@@ -37,8 +45,20 @@ class _Bab2PageState extends State<Bab2Page> {
       route: AppRoutes.columnRowRoute
     ),
     MenuModel(
-      title: 'Switch', 
-      route: AppRoutes.switchRoute
+      title: 'Stack & Positioned', 
+      route: AppRoutes.stackRoute
+    ),
+    MenuModel(
+      title: 'SingleChildScrollView', 
+      route: AppRoutes.singleScrollRoute
+    ),
+    MenuModel(
+      title: 'Padding', 
+      route: AppRoutes.paddingRoute
+    ),
+    MenuModel(
+      title: 'Align', 
+      route: AppRoutes.alignRoute
     ),
     MenuModel(
       title: 'ElevatedButton', 
@@ -73,8 +93,12 @@ class _Bab2PageState extends State<Bab2Page> {
       route: AppRoutes.expanTileRoute
     ),
     MenuModel(
-      title: 'SingleChildScrollView', 
-      route: AppRoutes.singleScrollRoute
+      title: 'Icon', 
+      route: AppRoutes.iconRoute
+    ),
+    MenuModel(
+      title: 'Switch', 
+      route: AppRoutes.switchRoute
     ),
   ];
 

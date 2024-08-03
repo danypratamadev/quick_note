@@ -33,24 +33,43 @@ class _GridviewCustomPageState extends State<GridviewCustomPage> {
             mainAxisSpacing: 12.0,
             crossAxisSpacing: 12.0,
           ),
-          childrenDelegate: SliverChildBuilderDelegate((context, index) => Container(
-            decoration: BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.circular(8.0),
-              ),
-              child: Center(
-                child: Text(
-                  listProduct[index],
-                  style: const TextStyle(
-                    fontSize: 16.0,
-                    color: Colors.white
-                  ),
-                  textAlign: TextAlign.center,
+          childrenDelegate: SliverChildBuilderDelegate((context, index) {
+            if(index == 0) {
+              return Container(
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(8.0),
                 ),
-              ),
-            ),
-            childCount: listProduct.length
-          ),
+                child: Center(
+                  child: Text(
+                    listProduct[index],
+                    style: const TextStyle(
+                      fontSize: 16.0,
+                      color: Colors.white
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              );
+            } else {
+              return Container(
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                child: Center(
+                  child: Text(
+                    listProduct[index],
+                    style: const TextStyle(
+                      fontSize: 16.0,
+                      color: Colors.white
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              );
+            }
+          }, childCount: listProduct.length),
         )
       ),
     );
