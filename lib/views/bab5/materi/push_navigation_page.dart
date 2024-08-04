@@ -23,15 +23,40 @@ class _PushNavigationPageState extends State<PushNavigationPage> {
       ),
       body: SafeArea(
         child: Center(
-          child: ElevatedButton(
-            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const Bab5DetailPage(),)),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.blue,
-              foregroundColor: Colors.white
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'Navigator.push',
+                  style: TextStyle(
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.w600
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 3.0,),
+                const Text(
+                  'Berpindah dari halaman ini ke halaman detail tanpa menghapus halaman ini dari tumpukan navigasi.',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 16.0,),
+                ElevatedButton(
+                  onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const Bab5DetailPage(),)),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white
+                  ),
+                  child: const Text(
+                    'Go to Detail Page'
+                  )
+                ),
+              ],
             ),
-            child: const Text(
-              'Go to Detail Page'
-            )
           ),
         )
       ),

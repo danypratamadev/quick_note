@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:quick_note/model/image_model.dart';
 
-class Bab4VerticalListviewPage extends StatefulWidget {
-  const Bab4VerticalListviewPage({super.key});
+class Bab4VerticalGridviewPage extends StatefulWidget {
+  const Bab4VerticalGridviewPage({super.key});
 
   @override
-  State<Bab4VerticalListviewPage> createState() => _Bab4VerticalListviewPageState();
+  State<Bab4VerticalGridviewPage> createState() => _Bab4VerticalGridviewPageState();
 }
 
-class _Bab4VerticalListviewPageState extends State<Bab4VerticalListviewPage> {
+class _Bab4VerticalGridviewPageState extends State<Bab4VerticalGridviewPage> {
 
   List<ImageModel> listImage = <ImageModel>[
     ImageModel(
@@ -75,7 +75,7 @@ class _Bab4VerticalListviewPageState extends State<Bab4VerticalListviewPage> {
               const Text(
                 'Image Grid',
                 style: TextStyle(
-                  fontSize: 22.0,
+                  fontSize: 18.0,
                   fontWeight: FontWeight.w600
                 ),
               ),

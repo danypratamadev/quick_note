@@ -75,7 +75,7 @@ class _Bab3VerticalListviewPageState extends State<Bab3VerticalListviewPage> {
               const Text(
                 'List User',
                 style: TextStyle(
-                  fontSize: 22.0,
+                  fontSize: 18.0,
                   fontWeight: FontWeight.w600
                 ),
               ),

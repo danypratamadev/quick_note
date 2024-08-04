@@ -95,7 +95,7 @@ class _Bab3HorizontalListviewPageState extends State<Bab3HorizontalListviewPage>
                     Text(
                       '1. List Button',
                       style: TextStyle(
-                        fontSize: 22.0,
+                        fontSize: 18.0,
                         fontWeight: FontWeight.w600
                       ),
                     ),
@@ -150,7 +150,7 @@ class _Bab3HorizontalListviewPageState extends State<Bab3HorizontalListviewPage>
                     Text(
                       '2. List Image',
                       style: TextStyle(
-                        fontSize: 22.0,
+                        fontSize: 18.0,
                         fontWeight: FontWeight.w600
                       ),
                     ),
@@ -200,7 +200,7 @@ class _Bab3HorizontalListviewPageState extends State<Bab3HorizontalListviewPage>
                     Text(
                       '3. List Avatar User',
                       style: TextStyle(
-                        fontSize: 22.0,
+                        fontSize: 18.0,
                         fontWeight: FontWeight.w600
                       ),
                     ),

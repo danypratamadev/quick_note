@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:quick_note/model/menu_model.dart';
 
-class Bab4HorizontalListviewPage extends StatefulWidget {
-  const Bab4HorizontalListviewPage({super.key});
+class Bab4HorizontalGridviewPage extends StatefulWidget {
+  const Bab4HorizontalGridviewPage({super.key});
 
   @override
-  State<Bab4HorizontalListviewPage> createState() => _Bab4HorizontalListviewPageState();
+  State<Bab4HorizontalGridviewPage> createState() => _Bab4HorizontalGridviewPageState();
 }
 
-class _Bab4HorizontalListviewPageState extends State<Bab4HorizontalListviewPage> {
+class _Bab4HorizontalGridviewPageState extends State<Bab4HorizontalGridviewPage> {
 
   List<MenuModel> listMenu = <MenuModel>[
     MenuModel(
@@ -84,7 +84,7 @@ class _Bab4HorizontalListviewPageState extends State<Bab4HorizontalListviewPage>
                     Text(
                       'Horizontal Menu Grid',
                       style: TextStyle(
-                        fontSize: 22.0,
+                        fontSize: 18.0,
                         fontWeight: FontWeight.w600
                       ),
                     ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quick_note/views/bab5/bab5_detail_page.dart';
+import 'package:quick_note/core/routes/app_routes.dart';
+import 'package:quick_note/model/menu_model.dart';
 
 class Bab5Page extends StatefulWidget {
   const Bab5Page({super.key});
@@ -9,6 +10,26 @@ class Bab5Page extends StatefulWidget {
 }
 
 class _Bab5PageState extends State<Bab5Page> {
+
+  List<MenuModel> listMenu = <MenuModel>[
+    MenuModel(
+      title: 'PushNavigator', 
+      route: AppRoutes.pushNavRoute
+    ),
+    MenuModel(
+      title: 'PushReplacement Navigator', 
+      route: AppRoutes.pushReplaceNavRoute
+    ),
+    MenuModel(
+      title: 'PushAndRemoveUntil Navigator', 
+      route: AppRoutes.pushRemoveUntilNavRoute
+    ),
+  ];
+
+  List<MenuModel> listPraktikMenu = <MenuModel>[
+    
+  ];
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,107 +43,92 @@ class _Bab5PageState extends State<Bab5Page> {
         ),
       ),
       body: SafeArea(
-        child: Center(
-          child: ElevatedButton(
-            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const Bab5DetailPage(),)),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.blue,
-              foregroundColor: Colors.white
-            ),
-            child: const Text(
-              'Go to Detail Page'
-            )
+        child: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
+          child: Column(
+            children: [
+              ExpansionTile(
+                dense: true,
+                initiallyExpanded: true,
+                title: const Text(
+                  'Materi',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.w600
+                  ),
+                ),
+                childrenPadding: const EdgeInsets.symmetric(
+                  horizontal: 16.0
+                ),
+                children: [
+                  ListView.separated(
+                    itemCount: listMenu.length,
+                    shrinkWrap: true,
+                    padding: EdgeInsets.zero,
+                    physics: const BouncingScrollPhysics(),
+                    itemBuilder: (context, index) => ListTile(
+                      onTap: () => Navigator.of(context).pushNamed(listMenu[index].route!),
+                      dense: true,
+                      title: Text(
+                        listMenu[index].title,
+                        style: const TextStyle(
+                          fontSize: 16.0
+                        ),
+                      ),
+                      trailing: Transform.translate(
+                        offset: const Offset(12.0, 0.0),
+                        child: const Icon(
+                          Icons.chevron_right_rounded
+                        ),
+                      ),
+                    ),
+                    separatorBuilder: (context, index) => const Divider(height: 0.0,),
+                  )
+                ],
+              ),
+              const SizedBox(height: 16.0,),
+              ExpansionTile(
+                dense: true,
+                initiallyExpanded: true,
+                title: const Text(
+                  'Praktikum',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.w600
+                  ),
+                ),
+                childrenPadding: const EdgeInsets.symmetric(
+                  horizontal: 16.0
+                ),
+                children: [
+                  ListView.separated(
+                    itemCount: listPraktikMenu.length,
+                    shrinkWrap: true,
+                    padding: EdgeInsets.zero,
+                    physics: const BouncingScrollPhysics(),
+                    itemBuilder: (context, index) => ListTile(
+                      onTap: () => Navigator.of(context).pushNamed(listPraktikMenu[index].route!),
+                      dense: true,
+                      title: Text(
+                        listPraktikMenu[index].title,
+                        style: const TextStyle(
+                          fontSize: 16.0
+                        ),
+                      ),
+                      trailing: Transform.translate(
+                        offset: const Offset(12.0, 0.0),
+                        child: const Icon(
+                          Icons.chevron_right_rounded
+                        ),
+                      ),
+                    ),
+                    separatorBuilder: (context, index) => const Divider(height: 0.0,),
+                  )
+                ],
+              ),
+            ],
           ),
         )
-        // Padding(
-        //   padding: const EdgeInsets.all(16.0),
-        //   child: Column(
-        //     crossAxisAlignment: CrossAxisAlignment.start,
-        //     children: [
-        //       const Text(
-        //         '1. Navigator.push',
-        //         style: TextStyle(
-        //           fontSize: 22.0,
-        //           fontWeight: FontWeight.w600
-        //         ),
-        //       ),
-        //       const SizedBox(height: 3.0,),
-        //       const Text(
-        //         'Berpindah dari halaman ini ke halaman detail tanpa menghapus halaman ini dari tumpukan navigasi.',
-        //         style: TextStyle(
-        //           fontSize: 14.0,
-        //         ),
-        //       ),
-        //       const SizedBox(height: 16.0,),
-        //       ElevatedButton(
-        //         onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const Bab5DetailPage(),)),
-        //         style: ElevatedButton.styleFrom(
-        //           backgroundColor: Colors.blue,
-        //           foregroundColor: Colors.white
-        //         ),
-        //         child: const Text(
-        //           'Go to Detail Page'
-        //         )
-        //       ),
-        //       const SizedBox(height: 24.0,),
-        //       const Divider(height: 0.0,),
-        //       const SizedBox(height: 24.0,),
-        //       const Text(
-        //         '2. Navigator.pushReplacement',
-        //         style: TextStyle(
-        //           fontSize: 22.0,
-        //           fontWeight: FontWeight.w600
-        //         ),
-        //       ),
-        //       const SizedBox(height: 3.0,),
-        //       const Text(
-        //         'Berpindah dari halaman ini ke halaman detail dan menghapus halaman ini dari tumpukan navigasi.',
-        //         style: TextStyle(
-        //           fontSize: 14.0,
-        //         ),
-        //       ),
-        //       const SizedBox(height: 16.0,),
-        //       ElevatedButton(
-        //         onPressed: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Bab5DetailPage(),)),
-        //         style: ElevatedButton.styleFrom(
-        //           backgroundColor: Colors.indigo,
-        //           foregroundColor: Colors.white
-        //         ),
-        //         child: const Text(
-        //           'Go to Detail Page'
-        //         )
-        //       ),
-        //       const SizedBox(height: 24.0,),
-        //       const Divider(height: 0.0,),
-        //       const SizedBox(height: 24.0,),
-        //       const Text(
-        //         '3. Navigator.pushAndRemoveUntil',
-        //         style: TextStyle(
-        //           fontSize: 22.0,
-        //           fontWeight: FontWeight.w600
-        //         ),
-        //       ),
-        //       const SizedBox(height: 3.0,),
-        //       const Text(
-        //         'Berpindah dari halaman ini ke halaman detail dan menghapus semua halaman sebelumnya dari tumpukan navigasi.',
-        //         style: TextStyle(
-        //           fontSize: 14.0,
-        //         ),
-        //       ),
-        //       const SizedBox(height: 16.0,),
-        //       ElevatedButton(
-        //         onPressed: () => Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => const Bab5DetailPage(),), (route) => false,),
-        //         style: ElevatedButton.styleFrom(
-        //           backgroundColor: Colors.red,
-        //           foregroundColor: Colors.white
-        //         ),
-        //         child: const Text(
-        //           'Go to Detail Page'
-        //         )
-        //       ),
-        //     ],
-        //   ),
-        // ),
       ),
     );
   }
