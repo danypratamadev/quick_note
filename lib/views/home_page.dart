@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
       title: 'Materi 6',
       subtitle: 'Rest API', 
       caption: '4 Materi', 
-      route: AppRoutes.bab5Route
+      route: AppRoutes.bab6Route
     ),
   ];
 

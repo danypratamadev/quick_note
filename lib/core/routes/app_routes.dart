@@ -42,6 +42,8 @@ import 'package:quick_note/views/bab5/materi/push_navigation_page.dart';
 import 'package:quick_note/views/bab5/materi/pushremoveuntil_navigation_page.dart';
 import 'package:quick_note/views/bab5/materi/pushreplace_navigation_page.dart';
 import 'package:quick_note/views/bab6/bab6_page.dart';
+import 'package:quick_note/views/bab6/materi/user_page.dart';
+import 'package:quick_note/views/bab6/praktik/detail_user_page.dart';
 import 'package:quick_note/views/home_page.dart';
 
 class AppRoutes {
@@ -96,6 +98,8 @@ class AppRoutes {
   static const String bab5DetailRoute = '/bab5/detail';
 
   static const String bab6Route = '/bab6';
+  static const String fetchUserRoute = '/bab6/fetch-user';
+  static const String bab6DetailUserRoute = '/bab6/fetch-detail-user';
   
   static final routes = {
     homeRoute: (context) => const HomePage(),
@@ -148,6 +152,8 @@ class AppRoutes {
     bab5DetailRoute: (context) => const Bab5DetailPage(),
     
     bab6Route: (context) => const Bab6Page(),
+    fetchUserRoute: (context) => const UserPage(),
+    bab6DetailUserRoute: (context) => const DetailUserPage(),
   };
 
 }
