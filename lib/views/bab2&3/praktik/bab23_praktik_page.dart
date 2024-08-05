@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:quick_note/core/utils/toast.dart';
 
-class Bab2PraktikPage extends StatefulWidget {
-  const Bab2PraktikPage({super.key});
+class Bab23PraktikPage extends StatefulWidget {
+  const Bab23PraktikPage({super.key});
 
   @override
-  State<Bab2PraktikPage> createState() => _Bab2PraktikPageState();
+  State<Bab23PraktikPage> createState() => _Bab23PraktikPageState();
 }
 
-class _Bab2PraktikPageState extends State<Bab2PraktikPage> {
+class _Bab23PraktikPageState extends State<Bab23PraktikPage> {
 
   bool switchEnable = true;
 

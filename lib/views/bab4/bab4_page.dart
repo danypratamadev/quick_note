@@ -13,30 +13,30 @@ class _Bab4PageState extends State<Bab4Page> {
 
   List<MenuModel> listMenu = <MenuModel>[
     MenuModel(
-      title: 'GridView Count', 
-      route: AppRoutes.gridViewCountRoute
+      title: 'ListView Builder', 
+      route: AppRoutes.listViewBuilderRoute
     ),
     MenuModel(
-      title: 'GridView Extent', 
-      route: AppRoutes.gridViewExtentRoute
+      title: 'ListView Separated', 
+      route: AppRoutes.listViewSeparatedRoute
     ),
     MenuModel(
-      title: 'GridView Builder', 
-      route: AppRoutes.gridViewBuilderRoute
+      title: 'ListView Custom', 
+      route: AppRoutes.listViewCustomRoute
     ),
     MenuModel(
-      title: 'GridView Custom', 
-      route: AppRoutes.gridViewCustomRoute
+      title: 'ListView', 
+      route: AppRoutes.listViewRoute
     ),
   ];
-
+  
   List<MenuModel> listPraktikMenu = <MenuModel>[
     MenuModel(
-      title: 'Vertical GridView', 
+      title: 'Vertical ListView', 
       route: AppRoutes.bab4VerticalRoute
     ),
     MenuModel(
-      title: 'Horizontal GridView', 
+      title: 'Horizontal ListView', 
       route: AppRoutes.bab4HorizontalRoute
     ),
   ];
@@ -46,7 +46,7 @@ class _Bab4PageState extends State<Bab4Page> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'GridView',
+          'ListView',
           style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600

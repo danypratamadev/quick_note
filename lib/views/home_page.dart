@@ -13,34 +13,46 @@ class _HomePageState extends State<HomePage> {
 
   List<MenuModel> listMenu = <MenuModel>[
     MenuModel(
-      title: 'Materi 2',
+      title: 'Materi 2 & 3',
       subtitle: 'Widget/Component', 
       caption: '10 Materi', 
-      route: AppRoutes.bab2Route
-    ),
-    MenuModel(
-      title: 'Materi 3',
-      subtitle: 'ListView', 
-      caption: '4 Materi', 
-      route: AppRoutes.bab3Route
+      route: AppRoutes.bab23Route
     ),
     MenuModel(
       title: 'Materi 4',
-      subtitle: 'GridView', 
+      subtitle: 'ListView', 
       caption: '4 Materi', 
       route: AppRoutes.bab4Route
     ),
     MenuModel(
       title: 'Materi 5',
-      subtitle: 'Navigation', 
+      subtitle: 'GridView', 
       caption: '4 Materi', 
       route: AppRoutes.bab5Route
     ),
     MenuModel(
       title: 'Materi 6',
-      subtitle: 'Rest API', 
+      subtitle: 'Navigation', 
       caption: '4 Materi', 
       route: AppRoutes.bab6Route
+    ),
+    MenuModel(
+      title: 'Materi 7',
+      subtitle: 'Rest API', 
+      caption: '4 Materi', 
+      route: AppRoutes.bab7Route
+    ),
+    MenuModel(
+      title: 'Materi 8',
+      subtitle: 'Firebase', 
+      caption: '4 Materi', 
+      route: AppRoutes.bab8Route
+    ),
+    MenuModel(
+      title: 'Materi 9',
+      subtitle: 'Aplikasi Login', 
+      caption: '4 Materi', 
+      route: AppRoutes.bab9Route
     ),
   ];
 

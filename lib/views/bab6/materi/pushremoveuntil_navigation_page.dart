@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quick_note/views/bab5/bab5_detail_page.dart';
+import 'package:quick_note/views/bab6/bab6_detail_page.dart';
 
 class PushremoveuntilNavigationPage extends StatefulWidget {
   const PushremoveuntilNavigationPage({super.key});
@@ -47,7 +47,7 @@ class _PushremoveuntilNavigationPageState extends State<PushremoveuntilNavigatio
                 const SizedBox(height: 16.0,),
                 ElevatedButton(
                   onPressed: () => Navigator.pushAndRemoveUntil(context, 
-                    MaterialPageRoute(builder: (context) => const Bab5DetailPage(),),
+                    MaterialPageRoute(builder: (context) => const Bab6DetailPage(),),
                       (route) => false,),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.red,

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:quick_note/core/routes/app_routes.dart';
 import 'package:quick_note/model/menu_model.dart';
 
-class Bab2Page extends StatefulWidget {
-  const Bab2Page({super.key});
+class Bab23Page extends StatefulWidget {
+  const Bab23Page({super.key});
 
   @override
-  State<Bab2Page> createState() => _Bab2PageState();
+  State<Bab23Page> createState() => _Bab23PageState();
 }
 
-class _Bab2PageState extends State<Bab2Page> {
+class _Bab23PageState extends State<Bab23Page> {
 
   List<MenuModel> listMenu = <MenuModel>[
     MenuModel(

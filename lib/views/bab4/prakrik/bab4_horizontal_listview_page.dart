@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:quick_note/core/utils/toast.dart';
 import 'package:quick_note/model/user_model.dart';
 
-class Bab3HorizontalListviewPage extends StatefulWidget {
-  const Bab3HorizontalListviewPage({super.key});
+class Bab4HorizontalListviewPage extends StatefulWidget {
+  const Bab4HorizontalListviewPage({super.key});
 
   @override
-  State<Bab3HorizontalListviewPage> createState() => _Bab3HorizontalListviewPageState();
+  State<Bab4HorizontalListviewPage> createState() => _Bab4HorizontalListviewPageState();
 }
 
-class _Bab3HorizontalListviewPageState extends State<Bab3HorizontalListviewPage> {
+class _Bab4HorizontalListviewPageState extends State<Bab4HorizontalListviewPage> {
 
   List<String> listButton = <String>[
     'All',

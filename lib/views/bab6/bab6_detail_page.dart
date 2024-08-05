@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Bab5DetailPage extends StatefulWidget {
-  const Bab5DetailPage({super.key});
+class Bab6DetailPage extends StatefulWidget {
+  const Bab6DetailPage({super.key});
 
   @override
-  State<Bab5DetailPage> createState() => _Bab5DetailPageState();
+  State<Bab6DetailPage> createState() => _Bab6DetailPageState();
 }
 
-class _Bab5DetailPageState extends State<Bab5DetailPage> {
+class _Bab6DetailPageState extends State<Bab6DetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quick_note/views/bab6/model/user_model.dart';
-import 'package:quick_note/views/bab6/services/user_service.dart';
+import 'package:quick_note/views/bab7/model/user_model.dart';
+import 'package:quick_note/views/bab7/services/user_service.dart';
 
 class DetailUserPage extends StatefulWidget {
   const DetailUserPage({super.key});

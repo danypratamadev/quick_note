@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:quick_note/views/bab5/bab5_detail_page.dart';
+import 'package:quick_note/views/bab6/bab6_detail_page.dart';
 
-class PushNavigationPage extends StatefulWidget {
-  const PushNavigationPage({super.key});
+class PushreplaceNavigationPage extends StatefulWidget {
+  const PushreplaceNavigationPage({super.key});
 
   @override
-  State<PushNavigationPage> createState() => _PushNavigationPageState();
+  State<PushreplaceNavigationPage> createState() => _PushreplaceNavigationPageState();
 }
 
-class _PushNavigationPageState extends State<PushNavigationPage> {
+class _PushreplaceNavigationPageState extends State<PushreplaceNavigationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Push Navigation',
+          'Push Replace Navigation',
           style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600
@@ -29,7 +29,7 @@ class _PushNavigationPageState extends State<PushNavigationPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'Navigator.push',
+                  'Navigator.pushReplacement',
                   style: TextStyle(
                     fontSize: 18.0,
                     fontWeight: FontWeight.w600
@@ -38,7 +38,7 @@ class _PushNavigationPageState extends State<PushNavigationPage> {
                 ),
                 const SizedBox(height: 3.0,),
                 const Text(
-                  'Berpindah dari halaman ini ke halaman detail tanpa menghapus halaman ini dari tumpukan navigasi.',
+                  'Berpindah dari halaman ini ke halaman detail dan menghapus halaman ini dari tumpukan navigasi.',
                   style: TextStyle(
                     fontSize: 14.0,
                   ),
@@ -46,7 +46,7 @@ class _PushNavigationPageState extends State<PushNavigationPage> {
                 ),
                 const SizedBox(height: 16.0,),
                 ElevatedButton(
-                  onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const Bab5DetailPage(),)),
+                  onPressed: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Bab6DetailPage(),)),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     foregroundColor: Colors.white

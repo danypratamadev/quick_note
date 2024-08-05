@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:quick_note/model/image_model.dart';
 
-class Bab4VerticalGridviewPage extends StatefulWidget {
-  const Bab4VerticalGridviewPage({super.key});
+class Bab5VerticalGridviewPage extends StatefulWidget {
+  const Bab5VerticalGridviewPage({super.key});
 
   @override
-  State<Bab4VerticalGridviewPage> createState() => _Bab4VerticalGridviewPageState();
+  State<Bab5VerticalGridviewPage> createState() => _Bab5VerticalGridviewPageState();
 }
 
-class _Bab4VerticalGridviewPageState extends State<Bab4VerticalGridviewPage> {
+class _Bab5VerticalGridviewPageState extends State<Bab5VerticalGridviewPage> {
 
   List<ImageModel> listImage = <ImageModel>[
     ImageModel(

@@ -2,27 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:quick_note/core/routes/app_routes.dart';
 import 'package:quick_note/model/menu_model.dart';
 
-class Bab6Page extends StatefulWidget {
-  const Bab6Page({super.key});
+class Bab7Page extends StatefulWidget {
+  const Bab7Page({super.key});
 
   @override
-  State<Bab6Page> createState() => _Bab6PageState();
+  State<Bab7Page> createState() => _Bab7PageState();
 }
 
-class _Bab6PageState extends State<Bab6Page> {
+class _Bab7PageState extends State<Bab7Page> {
 
   List<MenuModel> listMenu = <MenuModel>[
     MenuModel(
-      title: 'PushNavigator', 
-      route: AppRoutes.pushNavRoute
-    ),
-    MenuModel(
-      title: 'PushReplacement Navigator', 
-      route: AppRoutes.pushReplaceNavRoute
-    ),
-    MenuModel(
-      title: 'PushAndRemoveUntil Navigator', 
-      route: AppRoutes.pushRemoveUntilNavRoute
+      title: 'Fetch Data User', 
+      route: AppRoutes.fetchUserRoute
     ),
   ];
 
@@ -35,7 +27,7 @@ class _Bab6PageState extends State<Bab6Page> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Navigation',
+          'Rest API',
           style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600
@@ -86,10 +78,8 @@ class _Bab6PageState extends State<Bab6Page> {
                   )
                 ],
               ),
-              const SizedBox(height: 16.0,),
-              // ExpansionTile(
+              // ListTile(
               //   dense: true,
-              //   initiallyExpanded: true,
               //   title: const Text(
               //     'Praktikum',
               //     style: TextStyle(
@@ -97,35 +87,14 @@ class _Bab6PageState extends State<Bab6Page> {
               //       fontWeight: FontWeight.w600
               //     ),
               //   ),
-              //   childrenPadding: const EdgeInsets.symmetric(
-              //     horizontal: 16.0
+              //   trailing: Transform.translate(
+              //     offset: const Offset(0.0, 0.0),
+              //     child: const Icon(
+              //       Icons.chevron_right_rounded
+              //     ),
               //   ),
-              //   children: [
-              //     ListView.separated(
-              //       itemCount: listPraktikMenu.length,
-              //       shrinkWrap: true,
-              //       padding: EdgeInsets.zero,
-              //       physics: const BouncingScrollPhysics(),
-              //       itemBuilder: (context, index) => ListTile(
-              //         onTap: () => Navigator.of(context).pushNamed(listPraktikMenu[index].route!),
-              //         dense: true,
-              //         title: Text(
-              //           listPraktikMenu[index].title,
-              //           style: const TextStyle(
-              //             fontSize: 16.0
-              //           ),
-              //         ),
-              //         trailing: Transform.translate(
-              //           offset: const Offset(12.0, 0.0),
-              //           child: const Icon(
-              //             Icons.chevron_right_rounded
-              //           ),
-              //         ),
-              //       ),
-              //       separatorBuilder: (context, index) => const Divider(height: 0.0,),
-              //     )
-              //   ],
-              // ),
+              //   onTap: () => Navigator.of(context).pushNamed('/bab2/praktik'),
+              // )
             ],
           ),
         )

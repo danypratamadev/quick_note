@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:quick_note/model/user_model.dart';
 
-class Bab3VerticalListviewPage extends StatefulWidget {
-  const Bab3VerticalListviewPage({super.key});
+class Bab4VerticalListviewPage extends StatefulWidget {
+  const Bab4VerticalListviewPage({super.key});
 
   @override
-  State<Bab3VerticalListviewPage> createState() => _Bab3VerticalListviewPageState();
+  State<Bab4VerticalListviewPage> createState() => _Bab4VerticalListviewPageState();
 }
 
-class _Bab3VerticalListviewPageState extends State<Bab3VerticalListviewPage> {
+class _Bab4VerticalListviewPageState extends State<Bab4VerticalListviewPage> {
 
   List<UserModel> listUser = <UserModel>[
     UserModel(

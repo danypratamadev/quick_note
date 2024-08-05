@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:quick_note/views/bab6/model/user_model.dart';
+import 'package:quick_note/views/bab7/model/user_model.dart';
 
 class UserService {
 

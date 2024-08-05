@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quick_note/core/routes/app_routes.dart';
-import 'package:quick_note/views/bab6/model/user_model.dart';
-import 'package:quick_note/views/bab6/services/user_service.dart';
+import 'package:quick_note/views/bab7/model/user_model.dart';
+import 'package:quick_note/views/bab7/services/user_service.dart';
 
 class UserPage extends StatefulWidget {
   const UserPage({super.key});
